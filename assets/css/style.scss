@@ -1,0 +1,188 @@
+$color_1:#3C4447;
+$color_2:#F2F3F5;
+$color_3:#FC990E;
+$color_4:#222D60;
+@font-face {
+    font-family: "Gotham";
+    src: url("../fonts/gotham/Gotham-Light.otf");
+}
+
+@font-face {
+    font-family: "Gotham-bold";
+    src: url("../fonts/gotham/Gotham-Bold.otf");
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("../fonts/metropolis/Metropolis-Light.otf");
+}
+
+@font-face {
+    font-family: "Metropolis-bold";
+    src: url("../fonts/metropolis/Metropolis-Bold.otf");
+}
+
+@font-face {
+    font-family: "Metropolis-black";
+    src: url("../fonts/metropolis/Metropolis-Black.otf");
+}
+
+body {
+    font-family: "Metropolis";
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    nav {
+        background-color: $color_1;
+        #logo-coniser {
+            margin-left: 10px;
+            margin-top: -5px;
+        }
+        #hamb-menu {
+            margin-top: 15px;
+            margin-right: 15px;
+            img {
+                width: 30px;
+            }
+        }
+    }
+}
+
+section {
+    margin: 0;
+    padding: 0;
+}
+
+.hr-coniser {
+    width: 80%;
+    height: 2px;
+    background-color: $color_3;
+    border-color: $color_3;
+}
+
+#hero {
+    img {
+        width: 100%;
+    }
+}
+
+#main-information {
+    color: $color_2;
+    .info-left {
+        border-radius: 7px;
+        background-color: $color_3;
+        img {
+            width: 45px;
+            margin-top: 16px;
+        }
+        h5 {
+            font-size: 17px;
+            font-family: "Gotham-bold";
+        }
+        p {
+            font-size: 12px;
+            margin-top: -3px;
+        }
+    }
+    .info-right {
+        border-radius: 0 7px 7px 0;
+        background-color: $color_4;
+        p {
+            margin: 50px 0 50px 0;
+            font-size: 15px;
+        }
+    }
+}
+
+#projects {
+    color: $color_2;
+    background-color: $color_1;
+    background-size: 200% 105%;
+    background-repeat: no-repeat;
+    background-position: 75%;
+    background-image: url("../img/background-projects.png");
+    h3 {
+        margin-top: 0;
+        font-size: 24px;
+        font-family: "Metropolis-black";
+        padding-top: 15px;
+        margin-bottom: 8px;
+    }
+    .project-card {
+        background-color: $color_3;
+        border-radius: 5px;
+        width: 90%;
+        margin: 0 6px 0 6px;
+        img {
+            margin-top: 8px;
+            border-radius: 13px;
+            width: 110px;
+            height: 90px;
+        }
+        h4 {
+            margin-top: -5px;
+            text-align: left;
+            font-size: 13px;
+            padding: 10px;
+        }
+    }
+}
+
+#workers {
+    color: $color_2;
+    background-color: $color_1;
+    background-size: 200% 105%;
+    background-repeat: no-repeat;
+    background-position: 75%;
+    background-image: url("../img/background-workers.png");
+    h3 {
+        margin-top: 0;
+        font-size: 26px;
+        font-family: "Metropolis-black";
+        padding-top: 15px;
+        margin-bottom: 8px;
+    }
+    p {
+        font-size: 10px;
+        text-align: left;
+    }
+    .workers-photos-1,
+    .workers-photos-2 {
+        background-size: 90% 90%;
+        background-repeat: no-repeat;
+        margin: 5px 0 20px 0;
+        position: relative;
+        img {
+            width: 120px;
+            margin: 0 -3px 0 -3px;
+            border-radius: 5px;
+        }
+    }
+    .workers-photos-1 {
+        background-image: url("../img/workers-bg-2.svg");
+        background-position: 100% 100%;
+        padding-right: 15px;
+        padding-bottom: 5px;
+        left: 10px;
+    }
+    .workers-photos-2 {
+        background-image: url("../img/workers-bg-1.svg");
+        padding-top: 12px;
+        padding-right: 3px;
+        margin-top: 20px;
+        left: 5px;
+    }
+}
+
+footer {
+    background-color: $color_1;
+    color: $color_2;
+    margin-top: -20px;
+    p {
+        margin: 0;
+        padding: 10px 0 10px 0;
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,202 @@
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/gotham/Gotham-Light.otf");
+}
+
+@font-face {
+  font-family: "Gotham-bold";
+  src: url("../fonts/gotham/Gotham-Bold.otf");
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/metropolis/Metropolis-Light.otf");
+}
+
+@font-face {
+  font-family: "Metropolis-bold";
+  src: url("../fonts/metropolis/Metropolis-Bold.otf");
+}
+
+@font-face {
+  font-family: "Metropolis-black";
+  src: url("../fonts/metropolis/Metropolis-Black.otf");
+}
+
+body {
+  font-family: "Metropolis";
+  margin: 0;
+  padding: 0;
+}
+
+header nav {
+  background-color: #3C4447;
+}
+
+header nav #logo-coniser {
+  margin-left: 10px;
+  margin-top: -5px;
+}
+
+header nav #hamb-menu {
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+header nav #hamb-menu img {
+  width: 30px;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+}
+
+.hr-coniser {
+  width: 80%;
+  height: 2px;
+  background-color: #FC990E;
+  border-color: #FC990E;
+}
+
+#hero img {
+  width: 100%;
+}
+
+#main-information {
+  color: #F2F3F5;
+}
+
+#main-information .info-left {
+  border-radius: 7px;
+  background-color: #FC990E;
+}
+
+#main-information .info-left img {
+  width: 45px;
+  margin-top: 16px;
+}
+
+#main-information .info-left h5 {
+  font-size: 17px;
+  font-family: "Gotham-bold";
+}
+
+#main-information .info-left p {
+  font-size: 12px;
+  margin-top: -3px;
+}
+
+#main-information .info-right {
+  border-radius: 0 7px 7px 0;
+  background-color: #222D60;
+}
+
+#main-information .info-right p {
+  margin: 50px 0 50px 0;
+  font-size: 15px;
+}
+
+#projects {
+  color: #F2F3F5;
+  background-color: #3C4447;
+  background-size: 200% 105%;
+  background-repeat: no-repeat;
+  background-position: 75%;
+  background-image: url("../img/background-projects.png");
+}
+
+#projects h3 {
+  margin-top: 0;
+  font-size: 24px;
+  font-family: "Metropolis-black";
+  padding-top: 15px;
+  margin-bottom: 8px;
+}
+
+#projects .project-card {
+  background-color: #FC990E;
+  border-radius: 5px;
+  width: 90%;
+  margin: 0 6px 0 6px;
+}
+
+#projects .project-card img {
+  margin-top: 8px;
+  border-radius: 13px;
+  width: 110px;
+  height: 90px;
+}
+
+#projects .project-card h4 {
+  margin-top: -5px;
+  text-align: left;
+  font-size: 13px;
+  padding: 10px;
+}
+
+#workers {
+  color: #F2F3F5;
+  background-color: #3C4447;
+  background-size: 200% 105%;
+  background-repeat: no-repeat;
+  background-position: 75%;
+  background-image: url("../img/background-workers.png");
+}
+
+#workers h3 {
+  margin-top: 0;
+  font-size: 26px;
+  font-family: "Metropolis-black";
+  padding-top: 15px;
+  margin-bottom: 8px;
+}
+
+#workers p {
+  font-size: 10px;
+  text-align: left;
+}
+
+#workers .workers-photos-1,
+#workers .workers-photos-2 {
+  background-size: 90% 90%;
+  background-repeat: no-repeat;
+  margin: 5px 0 20px 0;
+  position: relative;
+}
+
+#workers .workers-photos-1 img,
+#workers .workers-photos-2 img {
+  width: 120px;
+  margin: 0 -3px 0 -3px;
+  border-radius: 5px;
+}
+
+#workers .workers-photos-1 {
+  background-image: url("../img/workers-bg-2.svg");
+  background-position: 100% 100%;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  left: 10px;
+}
+
+#workers .workers-photos-2 {
+  background-image: url("../img/workers-bg-1.svg");
+  padding-top: 12px;
+  padding-right: 3px;
+  margin-top: 20px;
+  left: 5px;
+}
+
+footer {
+  background-color: #3C4447;
+  color: #F2F3F5;
+  margin-top: -20px;
+}
+
+footer p {
+  margin: 0;
+  padding: 10px 0 10px 0;
+  font-size: 10px;
+}
+/*# sourceMappingURL=style.css.map */
