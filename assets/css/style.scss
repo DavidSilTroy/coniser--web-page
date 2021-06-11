@@ -170,6 +170,8 @@ section {
     .projects-showed {
         width: max-content;
         margin: 0 auto 0 auto;
+        position: relative;
+        right: -400px;
     }
     .project-card {
         background-color: $color_3;

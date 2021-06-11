@@ -183,6 +183,8 @@ section {
   width: -moz-max-content;
   width: max-content;
   margin: 0 auto 0 auto;
+  position: relative;
+  right: -400px;
 }
 
 #projects .project-card {

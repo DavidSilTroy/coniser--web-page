@@ -10,6 +10,14 @@ var coniser = {
 document.querySelector("#hamb-menu").onclick = () => {
     menuHideShow();
 };
+/*Scrolling*/
+window.onscroll = () => {
+    coniser.screenY = window.scrollY;
+    console.log(coniser.screenY)
+    if (coniser.screenY > 100) {
+        showProjects();
+    }
+};
 
 const menuHideShow = () => {
     if (!coniser.menuStarted) {
@@ -40,13 +48,19 @@ const showInformation = () => {
     t1.from("#right-information", {
             x: 80,
             duration: 1,
-            delay: 0.8
+            delay: 0.5
         })
         .from("#left-information", {
             autoAlpha: 0,
             x: -150,
             duration: 1
-        });
+        })
+}
+const showProjects = () => {
+    gsap.to("#project-scroll", {
+        duration: 2.5,
+        x: -400
+    });
 
 }
 const starting = () => {
