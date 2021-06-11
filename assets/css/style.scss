@@ -63,8 +63,28 @@ section {
 }
 
 #hero {
+    $hero_height: 181px;
     img {
         width: 100%;
+        height: $hero_height;
+    }
+    .overlay-carousel {
+        color: $color_2;
+        position: absolute;
+        z-index: 10;
+        background-color: #1414146b;
+        h2 {
+            font-size: 18px;
+            font-family: "Metropolis-black";
+        }
+        img {
+            width: 23px;
+        }
+        .row-overlay {
+            height: $hero_height;
+            width: 100%;
+            margin: 0;
+        }
     }
 }
 
