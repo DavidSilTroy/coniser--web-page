@@ -212,8 +212,10 @@ section {
         font-size: 10px;
         text-align: left;
     }
-    .workers-photos-1,
-    .workers-photos-2 {
+    #workers-photos-1,
+    #workers-photos-2,
+    #workers-photos-3 {
+        z-index: 2;
         background-size: 90% 90%;
         background-repeat: no-repeat;
         margin: 5px 0 20px 0;
@@ -224,14 +226,15 @@ section {
             border-radius: 5px;
         }
     }
-    .workers-photos-1 {
+    #workers-photos-1,
+    #workers-photos-3 {
         background-image: url("../img/workers-bg-2.svg");
         background-position: 100% 100%;
         padding-right: 15px;
         padding-bottom: 5px;
         left: 10px;
     }
-    .workers-photos-2 {
+    #workers-photos-2 {
         background-image: url("../img/workers-bg-1.svg");
         padding-top: 12px;
         padding-right: 3px;

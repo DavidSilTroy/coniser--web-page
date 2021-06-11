@@ -4,7 +4,7 @@ var coniser = {
     screenY: 0,
     menuStarted: false,
     menuColorTime: 0.6,
-    showedProject: 0,
+    showedSection: 0,
 }
 
 document.querySelector("#hamb-menu").onclick = () => {
@@ -14,8 +14,14 @@ document.querySelector("#hamb-menu").onclick = () => {
 window.onscroll = () => {
     coniser.screenY = window.scrollY;
     console.log(coniser.screenY)
-    if (coniser.screenY > 100) {
+
+    if (coniser.screenY > 100 && coniser.showedSection < 1) {
         showProjects();
+        coniser.showedSection++;
+    }
+    if (coniser.screenY > 300 && coniser.showedSection < 2) {
+        showWorkers();
+        coniser.showedSection++;
     }
 };
 
@@ -61,7 +67,25 @@ const showProjects = () => {
         duration: 2.5,
         x: -400
     });
+}
 
+const showWorkers = () => {
+    var t2 = gsap.timeline();
+    t2.from("#workers-photos-1", {
+            x: 80,
+            autoAlpha: 0,
+            duration: 1,
+        })
+        .from("#workers-photos-2", {
+            x: 80,
+            autoAlpha: 0,
+            duration: 1,
+        })
+        .from("#workers-photos-3", {
+            y: 80,
+            autoAlpha: 0,
+            duration: 1,
+        });
 }
 const starting = () => {
     showInformation();
