@@ -130,11 +130,20 @@ section {
         padding-top: 15px;
         margin-bottom: 8px;
     }
+    .project-scroll {
+        overflow: auto;
+        white-space: nowrap;
+        width: 100%;
+    }
+    .projects-showed {
+        width: max-content;
+        margin: 0 auto 0 auto;
+    }
     .project-card {
         background-color: $color_3;
         border-radius: 5px;
-        width: 90%;
-        margin: 0 6px 0 6px;
+        width: 130px;
+        margin: 0 auto 0 auto;
         img {
             margin-top: 8px;
             border-radius: 13px;
@@ -142,6 +151,7 @@ section {
             height: 90px;
         }
         h4 {
+            white-space: normal;
             margin-top: -5px;
             text-align: left;
             font-size: 13px;

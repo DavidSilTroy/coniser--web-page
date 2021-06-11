@@ -137,11 +137,24 @@ section {
   margin-bottom: 8px;
 }
 
+#projects .project-scroll {
+  overflow: auto;
+  white-space: nowrap;
+  width: 100%;
+}
+
+#projects .projects-showed {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto 0 auto;
+}
+
 #projects .project-card {
   background-color: #FC990E;
   border-radius: 5px;
-  width: 90%;
-  margin: 0 6px 0 6px;
+  width: 130px;
+  margin: 0 auto 0 auto;
 }
 
 #projects .project-card img {
@@ -152,6 +165,7 @@ section {
 }
 
 #projects .project-card h4 {
+  white-space: normal;
   margin-top: -5px;
   text-align: left;
   font-size: 13px;
