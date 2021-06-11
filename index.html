@@ -6,32 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coniser</title>
+    <meta name="author" content="CONISER S.A." />
+    <meta name="copyright" content="CONISER S.A." />
+    <meta name="description" content="CONISER S.A. es una empresa de Construcción y Servicios ubicada en Ecuador" />
+    <meta name="keywords" content="coniser, Ecuador, Construcción, Servicio, Mantenimiento" />
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!--Import Google Fonts-->
-    <!-- here -->
     <!--Import My owns Styles-->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <header>
+    <header class="navbar-fixed">
         <nav>
-            <div class="nav-wrapper">
+            <div class="nav-wrapper ">
                 <a id="logo-coniser" href="#" class="brand-logo left">
                     <img src="assets/img/logo.svg" alt="">
                 </a>
                 <a id="hamb-menu" class="sidebar-trigger right valign-wrapper hide-on-large-only">
                     <img src="assets/img/hamb-menu.svg" alt="">
                 </a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Servicios</a></li>
-                    <li><a href="">Proyectos</a></li>
-                    <li><a href="">Contaáctanos</a></li>
-                    <li><a href="">Nosotros</a></li>
+                <!-- right hide-on-med-and-down -->
+                <!-- mob-menu-coniser  -->
+                <ul id="nav-mobile" class="right hide-on-med-and-down" onclick="menuHideShow();">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#main-information">Servicios</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#workers">Contáctanos</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li class="mob-social-links hide-on-large-only">
+                        <div class="row center-align">
+                            <div class="col s4">
+                                <a href="">
+                                    <img src="assets/img/mob-facebook-icon.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="col s4">
+                                <a href="">
+                                    <img src="assets/img/mob-instagram-icon.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="col s4">
+                                <a href="">
+                                    <img src="assets/img/mob-whatsapp-icon.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -41,15 +65,15 @@
             <div class="carousel-bg">
                 <div class="overlay-carousel">
                     <div class="row row-overlay valign-wrapper">
-                        <div class="col s2">
+                        <div class="col s2 m2 l2 left-align">
                             <img src="assets/img/left-arrow-icon.svg" alt="">
                         </div>
-                        <div class="col s8 center-align">
+                        <div class="col s8 m8 l8 center-align">
                             <h2>
                                 Brindamos seguridad y confianza
                             </h2>
                         </div>
-                        <div class="col s2">
+                        <div class="col s2 m2 l2 right-align">
                             <img src="assets/img/right-arrow-icon.svg" alt="">
                         </div>
                     </div>
@@ -64,24 +88,24 @@
             <hr class="hr-coniser">
             <div class="container">
                 <div class="row valign-wrapper">
-                    <div class="col s6 center-align info-left">
+                    <div id="right-information" class="col s6 center-align info-left">
                         <h5>Nuestros Servicios</h5>
                         <div class="row">
                             <div class="col s12 m4">
-                                <img src="assets/img/construction-icon.svg" alt="">
+                                <img src="assets/img/construction-icon.svg" alt="Icono de construcción">
                                 <p>Construcción</p>
                             </div>
                             <div class="col s12 m4">
-                                <img src="assets/img/electric_instalation-icon.svg" alt="">
+                                <img src="assets/img/electric_instalation-icon.svg" alt="Icono de Instalaciones">
                                 <p>Instalaciones Eléctricas</p>
                             </div>
                             <div class="col s12 m4">
-                                <img src="assets/img/telecomunication-icon.svg" alt="">
+                                <img src="assets/img/telecomunication-icon.svg" alt="Icono de Telecomunicaciones">
                                 <p>Telecomunicaciones</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col s6 info-right">
+                    <div id="left-information" class="col s6 info-right">
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae expedita cupiditate deserunt. Nobis dolorum consectetur praesentium dignissimos, ex deserunt.
                         </p>
@@ -162,6 +186,8 @@
         </p>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="assets/js/loader.js"></script>
     <script>
     </script>
 

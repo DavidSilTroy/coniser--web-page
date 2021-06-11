@@ -9,6 +9,11 @@
 }
 
 @font-face {
+  font-family: "Gotham-medium";
+  src: url("../fonts/gotham/GothamMedium.ttf");
+}
+
+@font-face {
   font-family: "Metropolis";
   src: url("../fonts/metropolis/Metropolis-Light.otf");
 }
@@ -30,21 +35,50 @@ body {
 }
 
 header nav {
+  height: 56px;
+  line-height: 56px;
   background-color: #3C4447;
 }
 
 header nav #logo-coniser {
   margin-left: 10px;
-  margin-top: -5px;
 }
 
 header nav #hamb-menu {
-  margin-top: 15px;
-  margin-right: 15px;
+  height: 100%;
+  margin: auto 15px auto 0;
 }
 
 header nav #hamb-menu img {
   width: 30px;
+}
+
+header nav .mob-menu-coniser {
+  background-color: #3C4447;
+  display: inline-block;
+  height: 100vh;
+  padding-top: 10px;
+  position: fixed;
+  top: 56px;
+  opacity: 0;
+}
+
+header nav .mob-menu-coniser li {
+  border-style: none none solid none;
+  border-color: #F2F3F5;
+  border-width: 1px;
+  width: 100vw;
+}
+
+header nav .mob-menu-coniser li a {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Gotham-medium";
+}
+
+header nav .mob-menu-coniser .mob-social-links {
+  border-style: none;
+  margin-top: 50px;
 }
 
 section {
@@ -60,7 +94,7 @@ section {
 }
 
 #hero img {
-  width: 100%;
+  width: 100vw;
   height: 181px;
 }
 
@@ -82,7 +116,7 @@ section {
 
 #hero .overlay-carousel .row-overlay {
   height: 181px;
-  width: 100%;
+  width: 100vw;
   margin: 0;
 }
 
@@ -91,6 +125,7 @@ section {
 }
 
 #main-information .info-left {
+  z-index: 1;
   border-radius: 7px;
   background-color: #FC990E;
 }
