@@ -94,11 +94,12 @@ section {
 }
 
 #hero img {
-  width: 100vw;
-  height: 181px;
+  width: 100%;
+  height: 58vw;
 }
 
 #hero .overlay-carousel {
+  width: 100%;
   color: #F2F3F5;
   position: absolute;
   z-index: 10;
@@ -115,8 +116,8 @@ section {
 }
 
 #hero .overlay-carousel .row-overlay {
-  height: 181px;
-  width: 100vw;
+  height: 58vw;
+  width: 100%;
   margin: 0;
 }
 
@@ -131,7 +132,7 @@ section {
 }
 
 #main-information .info-left img {
-  width: 45px;
+  height: 55px;
   margin-top: 16px;
 }
 
@@ -244,7 +245,7 @@ section {
 #workers #workers-photos-1 img,
 #workers #workers-photos-2 img,
 #workers #workers-photos-3 img {
-  width: 120px;
+  width: 50%;
   margin: 0 -3px 0 -3px;
   border-radius: 5px;
 }
@@ -253,17 +254,17 @@ section {
 #workers #workers-photos-3 {
   background-image: url("../img/workers-bg-2.svg");
   background-position: 100% 100%;
-  padding-right: 15px;
+  padding-right: 18px;
   padding-bottom: 5px;
-  left: 10px;
+  left: 1%;
 }
 
 #workers #workers-photos-2 {
   background-image: url("../img/workers-bg-1.svg");
-  padding-top: 12px;
-  padding-right: 3px;
+  padding-top: 16px;
+  padding-left: 16px;
   margin-top: 20px;
-  left: 5px;
+  right: 1%;
 }
 
 footer {
@@ -276,5 +277,140 @@ footer p {
   margin: 0;
   padding: 10px 0 10px 0;
   font-size: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  header nav {
+    height: 64px;
+    line-height: 64px;
+  }
+  header nav #logo-coniser {
+    margin-left: 30px;
+  }
+  header nav #logo-coniser img {
+    width: 6em;
+  }
+  header nav a {
+    font-family: "Gotham-bold";
+  }
+  #hero img {
+    height: 56vw;
+  }
+  #hero .overlay-carousel h2 {
+    font-size: 3rem;
+    font-family: "Metropolis-black";
+  }
+  #hero .overlay-carousel img {
+    width: 3rem;
+  }
+  #hero .overlay-carousel .row-overlay {
+    height: 56vw;
+  }
+  #main-information {
+    color: #F2F3F5;
+  }
+  #main-information .info-left {
+    z-index: 1;
+    border-radius: 7px;
+    background-color: #FC990E;
+  }
+  #main-information .info-left img {
+    height: 100px;
+    margin-top: 10px;
+  }
+  #main-information .info-left h5 {
+    font-size: 37px;
+  }
+  #main-information .info-left p {
+    font-size: 13px;
+    margin-top: -2px;
+  }
+  #main-information .info-right {
+    border-radius: 0 7px 7px 0;
+    background-color: #222D60;
+  }
+  #main-information .info-right p {
+    margin: 30px 0 30px 0;
+    font-size: 16px;
+  }
+  #projects h3 {
+    font-size: 2.7rem;
+  }
+  #projects .project-scroll {
+    overflow: auto;
+    white-space: nowrap;
+    width: 100%;
+  }
+  #projects .projects-showed {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 0 auto 0 auto;
+    position: relative;
+    right: -400px;
+  }
+  #projects .project-card {
+    border-radius: 19px;
+    width: 230px;
+    height: 300px;
+  }
+  #projects .project-card img {
+    margin-top: 15px;
+    width: 200px;
+    height: 200px;
+  }
+  #projects .project-card h4 {
+    margin-top: -5px;
+    font-size: 18px;
+  }
+  #workers h3 {
+    font-size: 2.7rem;
+  }
+  #workers p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  #workers #workers-photos-1,
+  #workers #workers-photos-2,
+  #workers #workers-photos-3 {
+    z-index: 2;
+    background-size: 90% 90%;
+    background-repeat: no-repeat;
+    margin: 5px 0 20px 0;
+    position: relative;
+  }
+  #workers #workers-photos-1 img,
+  #workers #workers-photos-2 img,
+  #workers #workers-photos-3 img {
+    width: 40%;
+    margin: 0 -3px 0 -3px;
+    border-radius: 5px;
+  }
+  #workers #workers-photos-1,
+  #workers #workers-photos-3 {
+    background-image: url("../img/workers-bg-2.svg");
+    padding-right: 25px;
+  }
+  #workers #workers-photos-2 {
+    background-image: url("../img/workers-bg-1.svg");
+    padding-top: 13px;
+    padding-left: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #hero img {
+    height: 70vh;
+  }
+  #hero .overlay-carousel h2 {
+    font-size: 3rem;
+    font-family: "Metropolis-black";
+  }
+  #hero .overlay-carousel img {
+    width: 3rem;
+  }
+  #hero .overlay-carousel .row-overlay {
+    height: 70vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */

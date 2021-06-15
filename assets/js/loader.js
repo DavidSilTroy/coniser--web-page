@@ -1,14 +1,17 @@
 var coniser = {
     menu: null,
     menuHide: true,
+    menuDown: true,
     screenY: 0,
     menuStarted: false,
-    menuColorTime: 0.6,
     showedSection: 0,
 }
 
 document.querySelector("#hamb-menu").onclick = () => {
     menuHideShow();
+};
+document.querySelector("#nav-mobile").onclick = () => {
+    menuDownUp();
 };
 /*Scrolling*/
 window.onscroll = () => {
@@ -23,29 +26,56 @@ window.onscroll = () => {
         showWorkers();
         coniser.showedSection++;
     }
+    if (coniser.screenY > 30 && !coniser.menuDown) {
+        menuDownUp();
+    }
 };
 
-const menuHideShow = () => {
-    if (!coniser.menuStarted) {
-        coniser.menu = gsap.to("#nav-mobile", {
-            autoAlpha: 1,
-            duration: 0.25
-        });
-        gsap.set("#nav-mobile", {
-            className: "+=mob-menu-coniser"
-        });
-        coniser.menuStarted = true;
-        coniser.menuHide = false;
-    } else {
-        if (coniser.menuHide) {
-            coniser.menuHide = false;
-            coniser.menu.play();
 
+const menuDownUp = () => {
+    if (!coniser.menuHide) {
+        menuHideShow();
+    }
+    if (coniser.menuDown) {
+        gsap.to("#nav_coniser", {
+            y: -100,
+            duration: 0.5
+        });
+        setTimeout(() => { coniser.menuDown = false; }, 200);
+    } else {
+        gsap.to("#nav_coniser", {
+            y: 0,
+            duration: 0.5
+        });
+        coniser.menuDown = true;
+    }
+
+
+}
+const menuHideShow = () => {
+    if (screen.width < 1000) {
+        if (!coniser.menuStarted) {
+            coniser.menu = gsap.to("#nav-mobile", {
+                autoAlpha: 1,
+                duration: 0.25
+            });
+            gsap.set("#nav-mobile", {
+                className: "+=mob-menu-coniser"
+            });
+            coniser.menuStarted = true;
+            coniser.menuHide = false;
         } else {
-            coniser.menuHide = true;
-            coniser.menu.reverse();
+            if (coniser.menuHide) {
+                coniser.menuHide = false;
+                coniser.menu.play();
+
+            } else {
+                coniser.menuHide = true;
+                coniser.menu.reverse();
+            }
         }
     }
+
 };
 
 
