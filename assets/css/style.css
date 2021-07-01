@@ -285,12 +285,14 @@ section {
   margin-bottom: 0;
 }
 
-#information_contact-us {
+#information-1_contact-us,
+#information-2_contact-us {
   background-color: #3C4447;
   color: #F2F3F5;
 }
 
-#information_contact-us h2 {
+#information-1_contact-us h2,
+#information-2_contact-us h2 {
   font-family: "Gotham-bold";
   font-size: 20px;
   margin-bottom: 10px;
@@ -298,7 +300,8 @@ section {
   padding-bottom: 10px;
 }
 
-#information_contact-us iframe {
+#information-1_contact-us iframe,
+#information-2_contact-us iframe {
   width: 100%;
   height: 25vh;
 }
@@ -498,6 +501,10 @@ footer p {
     background-image: url("../img/workers-bg-1.svg");
     padding-top: 13px;
     padding-left: 10px;
+  }
+  #main_contact-us {
+    height: 90vh;
+    margin-top: 5em;
   }
 }
 

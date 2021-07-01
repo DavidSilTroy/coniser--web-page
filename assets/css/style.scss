@@ -263,7 +263,8 @@ section {
     }
 }
 
-#information_contact-us {
+#information-1_contact-us,
+#information-2_contact-us {
     background-color: $color_1;
     color: $color_2;
     h2 {
@@ -471,6 +472,10 @@ footer {
             padding-top: 13px;
             padding-left: 10px;
         }
+    }
+    #main_contact-us {
+        height: 90vh;
+        margin-top: 5em;
     }
 }
 
