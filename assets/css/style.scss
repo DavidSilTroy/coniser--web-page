@@ -249,6 +249,7 @@ section {
     }
 }
 
+//Contact_us page
 #information_welcome {
     h2 {
         font-family: "Gotham-bold";
@@ -473,9 +474,43 @@ footer {
             padding-left: 10px;
         }
     }
+    //Contact_us
     #main_contact-us {
         margin-top: 5em;
         margin-bottom: 5em;
+    }
+    #information_welcome {
+        h2 {
+            margin-top: 0;
+            font-size: 54px;
+        }
+        p {
+            font-size: 24px;
+        }
+    }
+    #form-coniser {
+        margin-top: 25px;
+        label {
+            font-family: "Metropolis-bold";
+            font-size: 22px;
+        }
+        button {
+            background-color: $color_3;
+            font-family: "Metropolis-bold";
+            font-size: 30px;
+        }
+    }
+    #under_map_contac-us {
+        padding-bottom: 20px;
+        p {
+            font-size: 26px;
+        }
+    }
+    #information-1_contact-us,
+    #information-2_contact-us {
+        h2 {
+            font-size: 44px;
+        }
     }
 }
 

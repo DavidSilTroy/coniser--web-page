@@ -303,7 +303,6 @@ section {
 #information-1_contact-us iframe,
 #information-2_contact-us iframe {
   width: 80%;
-  margin: 0 auto 0 auto;
   height: 25vh;
 }
 
@@ -506,6 +505,35 @@ footer p {
   #main_contact-us {
     margin-top: 5em;
     margin-bottom: 5em;
+  }
+  #information_welcome h2 {
+    margin-top: 0;
+    font-size: 54px;
+  }
+  #information_welcome p {
+    font-size: 24px;
+  }
+  #form-coniser {
+    margin-top: 25px;
+  }
+  #form-coniser label {
+    font-family: "Metropolis-bold";
+    font-size: 22px;
+  }
+  #form-coniser button {
+    background-color: #FC990E;
+    font-family: "Metropolis-bold";
+    font-size: 30px;
+  }
+  #under_map_contac-us {
+    padding-bottom: 20px;
+  }
+  #under_map_contac-us p {
+    font-size: 26px;
+  }
+  #information-1_contact-us h2,
+  #information-2_contact-us h2 {
+    font-size: 44px;
   }
 }
 
