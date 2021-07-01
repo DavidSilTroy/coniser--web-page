@@ -373,6 +373,40 @@ section {
   font-size: 20px;
 }
 
+#logo_abpout-us {
+  background-color: #222D60;
+}
+
+#logo_abpout-us img {
+  margin: 30px auto 10px auto;
+  width: 80vw;
+}
+
+#information-1_about-us,
+#information-2_about-us {
+  color: #F2F3F5;
+}
+
+#information-1_about-us h2,
+#information-2_about-us h2 {
+  margin-bottom: 0;
+}
+
+#information-1_about-us p,
+#information-2_about-us p {
+  margin-top: 0;
+  padding-bottom: 10px;
+}
+
+#information-1_about-us {
+  background-color: #FC990E;
+}
+
+#information-2_about-us {
+  background-color: #3C4447;
+  margin-bottom: 50px;
+}
+
 footer {
   background-color: #3C4447;
   color: #F2F3F5;
@@ -398,6 +432,9 @@ footer p {
   }
   header nav a {
     font-family: "Gotham-bold";
+  }
+  footer p {
+    font-size: 20px;
   }
   #hero img {
     height: 56vw;
