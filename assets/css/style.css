@@ -302,7 +302,8 @@ section {
 
 #information-1_contact-us iframe,
 #information-2_contact-us iframe {
-  width: 100%;
+  width: 80%;
+  margin: 0 auto 0 auto;
   height: 25vh;
 }
 
@@ -503,8 +504,8 @@ footer p {
     padding-left: 10px;
   }
   #main_contact-us {
-    height: 90vh;
     margin-top: 5em;
+    margin-bottom: 5em;
   }
 }
 
