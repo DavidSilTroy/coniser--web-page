@@ -272,6 +272,10 @@ section {
   right: 1%;
 }
 
+#main_contact-us {
+  min-height: 95vh;
+}
+
 #information_welcome h2 {
   font-family: "Gotham-bold";
   font-size: 22px;
@@ -419,7 +423,6 @@ section {
 #information-1_about-us div .descrip-container,
 #information-2_about-us div .descrip-container {
   height: 22em;
-  padding-block: auto;
 }
 
 #information-1_about-us div {
@@ -459,6 +462,55 @@ section {
 
 #information-2_about-us div .descrip-container {
   border-radius: 12px 0 0 12px;
+}
+
+#main_projects #hero-projects img {
+  width: 100%;
+  height: 40vw;
+}
+
+#main_projects #hero-projects .overlay-carousel {
+  width: 100%;
+  color: #F2F3F5;
+  position: absolute;
+  z-index: 10;
+  background-color: #1414146b;
+}
+
+#main_projects #hero-projects .overlay-carousel h2 {
+  font-size: 35px;
+  font-family: "Metropolis-black";
+}
+
+#main_projects #hero-projects .overlay-carousel img {
+  width: 23px;
+}
+
+#main_projects #hero-projects .overlay-carousel .row-overlay {
+  height: 40vw;
+  width: 100%;
+  margin: 0;
+}
+
+#main_projects #show-projects h3 {
+  font-size: 2.7rem;
+}
+
+#main_projects #show-projects .project-card {
+  background-color: #3C4447;
+  border-radius: 19px;
+  color: #F2F3F5;
+  margin: 5px;
+}
+
+#main_projects #show-projects .project-card img {
+  margin-top: 15px;
+  width: 90%;
+}
+
+#main_projects #show-projects .project-card h4 {
+  font-size: 18px;
+  padding-bottom: 15px;
 }
 
 footer {
@@ -592,10 +644,6 @@ footer p {
     background-image: url("../img/workers-bg-1.svg");
     padding-top: 13px;
     padding-left: 10px;
-  }
-  #main_contact-us {
-    margin-top: 5em;
-    margin-bottom: 5em;
   }
   #information_welcome h2 {
     margin-top: 0;

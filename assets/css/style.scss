@@ -250,6 +250,10 @@ section {
 }
 
 //Contact_us page
+#main_contact-us {
+    min-height: 95vh;
+}
+
 #information_welcome {
     h2 {
         font-family: "Gotham-bold";
@@ -406,6 +410,57 @@ section {
     margin-bottom: 50px;
 }
 
+//projects
+#main_projects {
+    #hero-projects {
+        $hero_height: 0.4 * 100vw;
+        img {
+            width: 100%;
+            height: $hero_height;
+        }
+        .overlay-carousel {
+            width: 100%;
+            color: $color_2;
+            position: absolute;
+            z-index: 10;
+            background-color: #1414146b;
+            h2 {
+                font-size: 35px;
+                font-family: "Metropolis-black";
+            }
+            img {
+                width: 23px;
+            }
+            .row-overlay {
+                height: $hero_height;
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
+    #show-projects {
+        h3 {
+            font-size: 2.7rem;
+        }
+        .project-card {
+            background-color: $color_1;
+            border-radius: 19px;
+            color: $color_2;
+            margin: 5px;
+            img {
+                margin-top: 15px;
+                width: 90%;
+            }
+            h4 {
+                font-size: 18px;
+                padding-bottom: 15px;
+            }
+        }
+    }
+}
+
+//service
+//footer
 footer {
     background-color: $color_1;
     color: $color_2;
@@ -552,10 +607,6 @@ footer {
         }
     }
     //Contact_us
-    #main_contact-us {
-        margin-top: 5em;
-        margin-bottom: 5em;
-    }
     #information_welcome {
         h2 {
             margin-top: 0;
