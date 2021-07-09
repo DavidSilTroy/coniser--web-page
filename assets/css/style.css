@@ -377,90 +377,96 @@ section {
   font-size: 20px;
 }
 
-#logo_abpout-us {
+#main_about-us {
+  min-height: 90vh;
+}
+
+#main_about-us section {
+  min-height: 30vh;
+}
+
+#main_about-us #logo_abpout-us {
   background-color: #222D60;
 }
 
-#logo_abpout-us img {
+#main_about-us #logo_abpout-us img {
   margin: 30px auto 10px auto;
   width: 80vw;
 }
 
-#information-1_about-us,
-#information-2_about-us {
+#main_about-us #information-1_about-us,
+#main_about-us #information-2_about-us {
   color: #F2F3F5;
 }
 
-#information-1_about-us h2,
-#information-2_about-us h2 {
+#main_about-us #information-1_about-us h2,
+#main_about-us #information-2_about-us h2 {
   margin: 0;
   padding-top: 10px;
   font-family: "Metropolis-bold";
   font-size: 2em;
 }
 
-#information-1_about-us p,
-#information-2_about-us p {
+#main_about-us #information-1_about-us p,
+#main_about-us #information-2_about-us p {
   margin: 0;
   padding-bottom: 10px;
   font-size: 1em;
 }
 
-#information-1_about-us div .img-container,
-#information-2_about-us div .img-container {
+#main_about-us #information-1_about-us div .img-container,
+#main_about-us #information-2_about-us div .img-container {
   border-radius: 15px;
   height: 25em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
-#information-1_about-us div .img-container img,
-#information-2_about-us div .img-container img {
+#main_about-us #information-1_about-us div .img-container img,
+#main_about-us #information-2_about-us div .img-container img {
   width: 100%;
   height: 90%;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-#information-1_about-us div .descrip-container,
-#information-2_about-us div .descrip-container {
+#main_about-us #information-1_about-us div .descrip-container,
+#main_about-us #information-2_about-us div .descrip-container {
   height: 22em;
 }
 
-#information-1_about-us div {
+#main_about-us #information-1_about-us div {
   background-color: #FC990E;
 }
 
-#information-1_about-us div .img-container {
+#main_about-us #information-1_about-us div .img-container {
   background-color: #3C4447;
 }
 
-#information-1_about-us div .descrip-container {
+#main_about-us #information-1_about-us div .descrip-container {
   background-color: #FC990E;
   border-radius: 0 12px 12px 0;
 }
 
-#information-2_about-us {
-  margin-bottom: 50px;
-}
-
-#information-2_about-us div {
+#main_about-us #information-2_about-us div {
   background-color: #3C4447;
 }
 
-#information-2_about-us div .img-container {
+#main_about-us #information-2_about-us div .img-container {
   background-color: #FC990E;
 }
 
-#information-2_about-us div .img-container img {
+#main_about-us #information-2_about-us div .img-container img {
   border-radius: 13px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-#information-2_about-us div .descrip-container {
+#main_about-us #information-2_about-us div .descrip-container {
   background-color: #3C4447;
 }
 
-#information-2_about-us div .descrip-container {
+#main_about-us #information-2_about-us div .descrip-container {
   border-radius: 12px 0 0 12px;
 }
 
@@ -496,6 +502,10 @@ section {
   font-size: 2.7rem;
 }
 
+#main_projects #show-projects .valign-wrapper {
+  min-height: 80vh;
+}
+
 #main_projects #show-projects .project-card {
   background-color: #3C4447;
   border-radius: 19px;
@@ -511,6 +521,34 @@ section {
 #main_projects #show-projects .project-card h4 {
   font-size: 18px;
   padding-bottom: 15px;
+}
+
+#main_service #hero-projects img {
+  width: 100%;
+  height: 40vw;
+}
+
+#main_service #hero-projects .overlay-carousel {
+  width: 100%;
+  color: #F2F3F5;
+  position: absolute;
+  z-index: 10;
+  background-color: #1414146b;
+}
+
+#main_service #hero-projects .overlay-carousel h2 {
+  font-size: 35px;
+  font-family: "Metropolis-black";
+}
+
+#main_service #hero-projects .overlay-carousel img {
+  width: 23px;
+}
+
+#main_service #hero-projects .overlay-carousel .row-overlay {
+  height: 40vw;
+  width: 100%;
+  margin: 0;
 }
 
 footer {
@@ -684,6 +722,32 @@ footer p {
   #information-1_about-us div,
   #information-2_about-us div {
     background-color: transparent;
+  }
+  #main_projects #hero-projects img {
+    width: 100%;
+    height: 35vw;
+  }
+  #main_projects #hero-projects .overlay-carousel h2 {
+    font-size: 78px;
+  }
+  #main_projects #hero-projects .overlay-carousel .row-overlay {
+    height: 35vw;
+  }
+  #main_projects #show-projects .row {
+    margin: 0 5em 0 5em;
+    margin-bottom: 5em;
+  }
+  #main_projects #show-projects .project-card {
+    border-radius: 19px;
+    margin: 20px;
+  }
+  #main_projects #show-projects .project-card img {
+    margin-top: 20px;
+    width: 90%;
+  }
+  #main_projects #show-projects .project-card h4 {
+    font-size: 22px;
+    padding: 0 15px 20px 15px;
   }
 }
 

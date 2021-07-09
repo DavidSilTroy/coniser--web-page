@@ -339,75 +339,79 @@ section {
 }
 
 //about_us
-#logo_abpout-us {
-    background-color: $color_4;
-    img {
-        margin: 30px auto 10px auto;
-        width: 80vw;
+#main_about-us {
+    min-height: 90vh;
+    section {
+        min-height: 30vh;
     }
-}
-
-#information-1_about-us,
-#information-2_about-us {
-    color: $color_2;
-    h2 {
-        margin: 0;
-        padding-top: 10px;
-        font-family: "Metropolis-bold";
-        font-size: 2em;
+    #logo_abpout-us {
+        background-color: $color_4;
+        img {
+            margin: 30px auto 10px auto;
+            width: 80vw;
+        }
     }
-    p {
-        margin: 0;
-        padding-bottom: 10px;
-        font-size: 1em;
-    }
-    div {
-        .img-container {
-            border-radius: 15px;
-            height: 25em;
-            img {
-                width: 100%;
-                height: 90%;
-                object-fit: contain;
+    #information-1_about-us,
+    #information-2_about-us {
+        color: $color_2;
+        h2 {
+            margin: 0;
+            padding-top: 10px;
+            font-family: "Metropolis-bold";
+            font-size: 2em;
+        }
+        p {
+            margin: 0;
+            padding-bottom: 10px;
+            font-size: 1em;
+        }
+        div {
+            .img-container {
+                border-radius: 15px;
+                height: 25em;
+                margin-top: 2em;
+                margin-bottom: 2em;
+                img {
+                    width: 100%;
+                    height: 90%;
+                    object-fit: contain;
+                }
+            }
+            .descrip-container {
+                height: 22em;
             }
         }
-        .descrip-container {
-            height: 22em;
-        }
     }
-}
-
-#information-1_about-us {
-    div {
-        background-color: $color_3;
-        .img-container {
-            background-color: $color_1;
-        }
-        .descrip-container {
+    #information-1_about-us {
+        div {
             background-color: $color_3;
-            border-radius: 0 12px 12px 0;
-        }
-    }
-}
-
-#information-2_about-us {
-    div {
-        background-color: $color_1;
-        .img-container {
-            background-color: $color_3;
-            img {
-                border-radius: 13px;
-                object-fit: cover;
+            .img-container {
+                background-color: $color_1;
+            }
+            .descrip-container {
+                background-color: $color_3;
+                border-radius: 0 12px 12px 0;
             }
         }
-        .descrip-container {
+    }
+    #information-2_about-us {
+        div {
             background-color: $color_1;
-        }
-        .descrip-container {
-            border-radius: 12px 0 0 12px;
+            .img-container {
+                background-color: $color_3;
+                img {
+                    border-radius: 13px;
+                    object-fit: cover;
+                }
+            }
+            .descrip-container {
+                background-color: $color_1;
+            }
+            .descrip-container {
+                border-radius: 12px 0 0 12px;
+            }
         }
     }
-    margin-bottom: 50px;
 }
 
 //projects
@@ -442,6 +446,9 @@ section {
         h3 {
             font-size: 2.7rem;
         }
+        .valign-wrapper {
+            min-height: 80vh;
+        }
         .project-card {
             background-color: $color_1;
             border-radius: 19px;
@@ -460,6 +467,35 @@ section {
 }
 
 //service
+#main_service {
+    #hero-projects {
+        $hero_height: 0.4 * 100vw;
+        img {
+            width: 100%;
+            height: $hero_height;
+        }
+        .overlay-carousel {
+            width: 100%;
+            color: $color_2;
+            position: absolute;
+            z-index: 10;
+            background-color: #1414146b;
+            h2 {
+                font-size: 35px;
+                font-family: "Metropolis-black";
+            }
+            img {
+                width: 23px;
+            }
+            .row-overlay {
+                height: $hero_height;
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
+}
+
 //footer
 footer {
     background-color: $color_1;
@@ -652,6 +688,42 @@ footer {
     #information-2_about-us {
         div {
             background-color: transparent;
+        }
+    }
+    //projects
+    #main_projects {
+        #hero-projects {
+            $hero_height: 0.35 * 100vw;
+            img {
+                width: 100%;
+                height: $hero_height;
+            }
+            .overlay-carousel {
+                h2 {
+                    font-size: 78px;
+                }
+                .row-overlay {
+                    height: $hero_height;
+                }
+            }
+        }
+        #show-projects {
+            .row {
+                margin: 0 5em 0 5em;
+                margin-bottom: 5em;
+            }
+            .project-card {
+                border-radius: 19px;
+                margin: 20px;
+                img {
+                    margin-top: 20px;
+                    width: 90%;
+                }
+                h4 {
+                    font-size: 22px;
+                    padding: 0 15px 20px 15px;
+                }
+            }
         }
     }
 }
