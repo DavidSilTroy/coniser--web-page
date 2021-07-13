@@ -340,11 +340,11 @@ section {
 
 //about_us
 #main_about-us {
-    min-height: 90vh;
+    min-height: 93vh;
     section {
-        min-height: 30vh;
+        margin-bottom: 3em;
     }
-    #logo_abpout-us {
+    #logo_about-us {
         background-color: $color_4;
         img {
             margin: 30px auto 10px auto;
@@ -354,6 +354,7 @@ section {
     #information-1_about-us,
     #information-2_about-us {
         color: $color_2;
+        background-color: transparent;
         h2 {
             margin: 0;
             padding-top: 10px;
@@ -468,8 +469,8 @@ section {
 
 //service
 #main_service {
-    #hero-projects {
-        $hero_height: 0.4 * 100vw;
+    #hero-service {
+        $hero_height: 0.45 * 100vw;
         img {
             width: 100%;
             height: $hero_height;
@@ -482,7 +483,7 @@ section {
             background-color: #1414146b;
             h2 {
                 font-size: 35px;
-                font-family: "Metropolis-black";
+                font-family: "Gotham-bold";
             }
             img {
                 width: 23px;
@@ -491,6 +492,34 @@ section {
                 height: $hero_height;
                 width: 100%;
                 margin: 0;
+            }
+        }
+    }
+    #our-service {
+        min-height: 90vh;
+        .row {
+            .col {
+                margin-top: 10px;
+                margin-bottom: 15px;
+                color: $color_2;
+                img {
+                    width: 100%;
+                    padding: 0.1em 0.5em 0.1em 0.5em;
+                }
+                p,
+                h3 {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 10px;
+                    font-family: "Gotham-bold";
+                }
+                h3 {
+                    font-size: 16px;
+                }
+                .row {
+                    margin: 0;
+                    padding: 0;
+                }
             }
         }
     }
@@ -506,6 +535,11 @@ footer {
         padding: 10px 0 10px 0;
         font-size: 10px;
     }
+}
+
+//others
+.lineal-color-1 {
+    background: linear-gradient( 90deg, #3C4447, #254B57, #105166)
 }
 
 @media screen and (min-width: 375px) {}
@@ -677,17 +711,23 @@ footer {
         }
     }
     //about_us
-    #logo_abpout-us {
-        background-color: $color_4;
-        img {
-            margin: 30px auto 10px auto;
-            width: 40vw;
+    #main_about-us {
+        #logo_about-us {
+            background-color: $color_4;
+            img {
+                margin: 30px auto 10px auto;
+                width: 70vw;
+            }
         }
-    }
-    #information-1_about-us,
-    #information-2_about-us {
-        div {
-            background-color: transparent;
+        #information-1_about-us {
+            div {
+                background-color: transparent;
+            }
+        }
+        #information-2_about-us {
+            div {
+                background-color: transparent;
+            }
         }
     }
     //projects
@@ -726,6 +766,44 @@ footer {
             }
         }
     }
+    //service
+    #main_service {
+        #hero-service {
+            $hero_height: 0.15 * 100vw;
+            img {
+                height: $hero_height;
+            }
+            .overlay-carousel {
+                background: linear-gradient( 90deg, #37464B, #284A55, #184F60);
+                h2 {
+                    font-size: 50px;
+                }
+                .row-overlay {
+                    height: $hero_height;
+                }
+            }
+        }
+        #our-service {
+            // min-height: 90vh;
+            .row {
+                .col {
+                    color: $color_2;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        padding: 0.5em 1.5em 1.5em 1.5em;
+                    }
+                    p,
+                    h3 {
+                        font-size: 18px;
+                    }
+                    h3 {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -744,6 +822,52 @@ footer {
             }
             .row-overlay {
                 height: $hero_height;
+            }
+        }
+    }
+    //service
+    #main_service {
+        #hero-service {
+            $hero_height: 0.10 * 100vw;
+            img {
+                height: $hero_height;
+            }
+            .overlay-carousel {
+                background: linear-gradient( 90deg, #37464B, #284A55, #184F60);
+                h2 {
+                    font-size: 60px;
+                }
+                .row-overlay {
+                    height: $hero_height;
+                }
+            }
+        }
+        #our-service {
+            padding: 15vh 0 0 0 !important;
+            min-height: 73vh;
+            .row {
+                .col {
+                    img {
+                        width: 100%;
+                        height: 15em;
+                        padding: 2em 30% 1.5em 30%;
+                    }
+                    p,
+                    h3 {
+                        padding: 0.1em 1em 0.5em 1em;
+                        font-size: 18px;
+                    }
+                    p {
+                        text-align: left !important;
+                        padding: 0.1em 1.5em 0.5em 1.5em;
+                    }
+                    h3 {
+                        font-size: 30px;
+                    }
+                }
+            }
+            .hide-on-large-obly {
+                height: 100%;
             }
         }
     }

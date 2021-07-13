@@ -378,18 +378,18 @@ section {
 }
 
 #main_about-us {
-  min-height: 90vh;
+  min-height: 93vh;
 }
 
 #main_about-us section {
-  min-height: 30vh;
+  margin-bottom: 3em;
 }
 
-#main_about-us #logo_abpout-us {
+#main_about-us #logo_about-us {
   background-color: #222D60;
 }
 
-#main_about-us #logo_abpout-us img {
+#main_about-us #logo_about-us img {
   margin: 30px auto 10px auto;
   width: 80vw;
 }
@@ -397,6 +397,7 @@ section {
 #main_about-us #information-1_about-us,
 #main_about-us #information-2_about-us {
   color: #F2F3F5;
+  background-color: transparent;
 }
 
 #main_about-us #information-1_about-us h2,
@@ -523,12 +524,12 @@ section {
   padding-bottom: 15px;
 }
 
-#main_service #hero-projects img {
+#main_service #hero-service img {
   width: 100%;
-  height: 40vw;
+  height: 45vw;
 }
 
-#main_service #hero-projects .overlay-carousel {
+#main_service #hero-service .overlay-carousel {
   width: 100%;
   color: #F2F3F5;
   position: absolute;
@@ -536,19 +537,51 @@ section {
   background-color: #1414146b;
 }
 
-#main_service #hero-projects .overlay-carousel h2 {
+#main_service #hero-service .overlay-carousel h2 {
   font-size: 35px;
-  font-family: "Metropolis-black";
+  font-family: "Gotham-bold";
 }
 
-#main_service #hero-projects .overlay-carousel img {
+#main_service #hero-service .overlay-carousel img {
   width: 23px;
 }
 
-#main_service #hero-projects .overlay-carousel .row-overlay {
-  height: 40vw;
+#main_service #hero-service .overlay-carousel .row-overlay {
+  height: 45vw;
   width: 100%;
   margin: 0;
+}
+
+#main_service #our-service {
+  min-height: 90vh;
+}
+
+#main_service #our-service .row .col {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #F2F3F5;
+}
+
+#main_service #our-service .row .col img {
+  width: 100%;
+  padding: 0.1em 0.5em 0.1em 0.5em;
+}
+
+#main_service #our-service .row .col p,
+#main_service #our-service .row .col h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: "Gotham-bold";
+}
+
+#main_service #our-service .row .col h3 {
+  font-size: 16px;
+}
+
+#main_service #our-service .row .col .row {
+  margin: 0;
+  padding: 0;
 }
 
 footer {
@@ -561,6 +594,11 @@ footer p {
   margin: 0;
   padding: 10px 0 10px 0;
   font-size: 10px;
+}
+
+.lineal-color-1 {
+  background: -webkit-gradient(linear, left top, right top, from(#3C4447), color-stop(#254B57), to(#105166));
+  background: linear-gradient(90deg, #3C4447, #254B57, #105166);
 }
 
 @media screen and (min-width: 720px) {
@@ -712,15 +750,17 @@ footer p {
   #information-2_contact-us h2 {
     font-size: 44px;
   }
-  #logo_abpout-us {
+  #main_about-us #logo_about-us {
     background-color: #222D60;
   }
-  #logo_abpout-us img {
+  #main_about-us #logo_about-us img {
     margin: 30px auto 10px auto;
-    width: 40vw;
+    width: 70vw;
   }
-  #information-1_about-us div,
-  #information-2_about-us div {
+  #main_about-us #information-1_about-us div {
+    background-color: transparent;
+  }
+  #main_about-us #information-2_about-us div {
     background-color: transparent;
   }
   #main_projects #hero-projects img {
@@ -749,6 +789,34 @@ footer p {
     font-size: 22px;
     padding: 0 15px 20px 15px;
   }
+  #main_service #hero-service img {
+    height: 15vw;
+  }
+  #main_service #hero-service .overlay-carousel {
+    background: -webkit-gradient(linear, left top, right top, from(#37464B), color-stop(#284A55), to(#184F60));
+    background: linear-gradient(90deg, #37464B, #284A55, #184F60);
+  }
+  #main_service #hero-service .overlay-carousel h2 {
+    font-size: 50px;
+  }
+  #main_service #hero-service .overlay-carousel .row-overlay {
+    height: 15vw;
+  }
+  #main_service #our-service .row .col {
+    color: #F2F3F5;
+  }
+  #main_service #our-service .row .col img {
+    width: 100%;
+    height: 100%;
+    padding: 0.5em 1.5em 1.5em 1.5em;
+  }
+  #main_service #our-service .row .col p,
+  #main_service #our-service .row .col h3 {
+    font-size: 18px;
+  }
+  #main_service #our-service .row .col h3 {
+    font-size: 30px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -764,6 +832,43 @@ footer p {
   }
   #hero .overlay-carousel .row-overlay {
     height: 70vh;
+  }
+  #main_service #hero-service img {
+    height: 10vw;
+  }
+  #main_service #hero-service .overlay-carousel {
+    background: -webkit-gradient(linear, left top, right top, from(#37464B), color-stop(#284A55), to(#184F60));
+    background: linear-gradient(90deg, #37464B, #284A55, #184F60);
+  }
+  #main_service #hero-service .overlay-carousel h2 {
+    font-size: 60px;
+  }
+  #main_service #hero-service .overlay-carousel .row-overlay {
+    height: 10vw;
+  }
+  #main_service #our-service {
+    padding: 15vh 0 0 0 !important;
+    min-height: 73vh;
+  }
+  #main_service #our-service .row .col img {
+    width: 100%;
+    height: 15em;
+    padding: 2em 30% 1.5em 30%;
+  }
+  #main_service #our-service .row .col p,
+  #main_service #our-service .row .col h3 {
+    padding: 0.1em 1em 0.5em 1em;
+    font-size: 18px;
+  }
+  #main_service #our-service .row .col p {
+    text-align: left !important;
+    padding: 0.1em 1.5em 0.5em 1.5em;
+  }
+  #main_service #our-service .row .col h3 {
+    font-size: 30px;
+  }
+  #main_service #our-service .hide-on-large-obly {
+    height: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
