@@ -37,6 +37,14 @@ $color_4:#222D60;
     src: url("../fonts/metropolis/Metropolis-Medium.otf");
 }
 
+@mixin transition($x...) {
+    -webkit-transition: $x;
+    -moz-transition: $x;
+    -ms-transition: $x;
+    -o-transition: $x;
+    transition: $x;
+}
+
 body {
     font-family: "Metropolis";
     margin: 0;
@@ -496,7 +504,11 @@ section {
         }
     }
     #our-service {
-        min-height: 90vh;
+        $minhvh: 70vh;
+        min-height: $minhvh;
+        .container {
+            margin-top: $minhvh*0.2;
+        }
         .row {
             .col {
                 margin-top: 10px;
@@ -540,6 +552,13 @@ footer {
 //others
 .lineal-color-1 {
     background: linear-gradient( 90deg, #3C4447, #254B57, #105166)
+}
+
+.changing-size {
+    @include transition( all 0.3s ease-in-out);
+    &:hover {
+        transform: scale(110%, 110%);
+    }
 }
 
 @media screen and (min-width: 375px) {}
@@ -733,7 +752,7 @@ footer {
     //projects
     #main_projects {
         #hero-projects {
-            $hero_height: 0.35 * 100vw;
+            $hero_height: 0.25 * 100vw;
             img {
                 width: 100%;
                 height: $hero_height;

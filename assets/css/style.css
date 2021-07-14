@@ -553,7 +553,11 @@ section {
 }
 
 #main_service #our-service {
-  min-height: 90vh;
+  min-height: 70vh;
+}
+
+#main_service #our-service .container {
+  margin-top: 14vh;
 }
 
 #main_service #our-service .row .col {
@@ -599,6 +603,16 @@ footer p {
 .lineal-color-1 {
   background: -webkit-gradient(linear, left top, right top, from(#3C4447), color-stop(#254B57), to(#105166));
   background: linear-gradient(90deg, #3C4447, #254B57, #105166);
+}
+
+.changing-size {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.changing-size:hover {
+  -webkit-transform: scale(110%, 110%);
+          transform: scale(110%, 110%);
 }
 
 @media screen and (min-width: 720px) {
@@ -765,13 +779,13 @@ footer p {
   }
   #main_projects #hero-projects img {
     width: 100%;
-    height: 35vw;
+    height: 25vw;
   }
   #main_projects #hero-projects .overlay-carousel h2 {
     font-size: 78px;
   }
   #main_projects #hero-projects .overlay-carousel .row-overlay {
-    height: 35vw;
+    height: 25vw;
   }
   #main_projects #show-projects .row {
     margin: 0 5em 0 5em;
