@@ -164,10 +164,10 @@ section {
 #projects {
   color: #F2F3F5;
   background-color: #3C4447;
-  background-size: 200% 105%;
+  background-size: 150% 270%;
   background-repeat: no-repeat;
-  background-position: 75%;
-  background-image: url("../img/background-projects.png");
+  background-position: 55%;
+  background-image: url("../img/background-projects.svg");
 }
 
 #projects h3 {
